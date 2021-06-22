@@ -87,3 +87,18 @@ Problem solving
       e. Can you improve the performance of you solution?
       f. Can you think of other ways to refactor?
       g. How have other people solved this problem?
+
+Recursion
+  What is Recursion?
+    A function that calls itself.
+  Why do I need this?
+    It's EVERYWHERE
+      - JSON.parse / JSON.stringify
+      - document.getElementById and DOM traversal algorithms
+      - Object traversal
+      - We will see it with more complex data structures.
+      - Sometimes a cleaner alternative to iteration.
+  Where Things Go Wrong
+    - No Base Case
+    - Forgetting to return or returning the wrong Things
+    - Stack Overflow
