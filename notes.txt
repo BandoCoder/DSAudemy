@@ -1,0 +1,89 @@
+BIG O NOTATION (and some common big O's for common methods)
+
+When to use object
+  -When you don't need order
+  -When you need fast access / insertion and removal
+  -Objects are constant time (except for searching)
+
+Big O of Objects
+  -Insertion  -  O(1)
+  -Removal  -  O(1)
+  -Searching  -  O(n)
+  -Access  -  O(1)
+
+Object methods
+  -Object.keys(object)  -  O(n)
+  -Object.entries(object)  -  O(n)
+  -Object.values(object)  -  O(n)
+  -hasOwnProperty  -  O(1)
+
+When to use arrays (ordered lists)
+  -When you need order
+  -When you need fast access / insertian and removal (sort of....)
+
+Big O of arrays
+  -Insertion  -  It depends...
+    -Push method at end of array  -  O(1)
+    -Insertion at beginning of array  -  O(n) (We have to re index every element)
+  -Removal  -  It depends...
+    -Removal from beginning  -  O(n)  (We have to re index every element)
+    -Removal at end of array  -  O(1)
+  -Searching  -  O(n)
+  -Access -  O(1)
+      *PUSH AND POP ARE ALWAYS FASTER THAN SHIFT AND UNSHIFT
+
+Big O of array operations
+  -push - O(1)
+  -pop - O(1)
+  -shift - O(n)
+  -unshift - O(n)
+  -concat - O(n)
+  -splice - O(n)
+  -sort - O(n * log n)
+  -forEach/map/filter/reduce/etc. - O(n)
+
+PROBLEM SOLVING APPROACH
+
+Algorithm = A set of steps to accomplish a task
+
+Almost everything that you do in programming involves some kind of algorithm!
+It's the foundation for being a sucessful problem solver and developer
+Also.... INTERVIEWS
+
+HOW DO YOU IMPROVE?
+  1. Devise a plan for solving problems
+  2. Master common problem solving patterns
+
+Problem solving
+  - Understand the problem
+      a. Can I restate the prolem in my own words?
+      b. What are the inputs that go into the problem?
+      c. What are the outputs that should come from the solution to the problem>
+      d. Can the outputs be determined from the inputs?  In other words, do I have
+         enough information to solve the problem? (You may not be able to answer
+         this question until you set about solving the problem.  Thats okay; it's
+         still worth considering the question at this early stage.)
+      e. How should I label the important pieces of data that are a part of
+         the problem? 
+  - Explore Concrete Examples
+      a. Start with Simple Examples
+      b. Progress to More Complex Examples
+      c. Explore examples with empty inputs
+      d. Explore examples with Invalid inputs
+  - Break it down
+      a. Explicitly write out the steps you need to take.
+  - Solve/Simplify
+      a. Solve
+      b. Simplify
+        - Find the core difficulty in what you're trying to do
+        - Temporarily ignore that difficulty
+        - Write a simplified solution
+        - Then incorporate difficulty bakc in
+  - Look back and refactor
+      a. Can you check the result?
+      b. Can you derive the result differently?
+      c. Can you understand it at a glance?
+      d. Can you use the result or method for some other problem?
+      e. Can you improve the performance of you solution?
+      f. Can you think of other ways to refactor?
+      g. How have other people solved this problem?
