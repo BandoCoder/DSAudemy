@@ -61,3 +61,6 @@ function mergeSort(arr) {
   let right = mergeSort(arr.slice(mid));
   return merge(left, right);
 }
+
+//Time complexity: O(n log n) - merge helper function is O(n) and merge sort on its own is O(log n)
+//Space complexiy: O(n)
